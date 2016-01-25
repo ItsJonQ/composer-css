@@ -4,9 +4,3 @@
 @charset "utf-8";
 
 @import "composer";
-
-body {
-  @include composer-media-breakpoint(sm) {
-    background: red;
-  }
-}

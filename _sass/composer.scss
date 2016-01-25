@@ -7,9 +7,11 @@
 // Mixins
 @import "mixins/breakpoints";
 @import "mixins/spacing";
+@import "mixins/width";
 
 // Components
 @import "components/flex";
 
 // Utilities
 @import "utilities/spacing";
+@import "utilities/width";

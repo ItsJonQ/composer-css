@@ -1,7 +1,13 @@
 // Components :: Flex
 
-.u-flex__block {
+.o-flex {
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+}
+
+.o-flex__block {
   @include composer-each-breakpoint() {
-    display: flex;
+    flex: 1;
   }
 }

@@ -6,9 +6,11 @@
 
       $_util-classname: u-#{$class}-#{$dir-class}-#{$size-class};
       $_size: #{$size};
+      $_property: #{$property}-#{$dir-prop};
 
       @if ($dir-class == false) {
         $_util-classname: u-#{$class}-#{$size-class};
+        $_property: #{$property};
       }
 
       @if ($auto != false) {
@@ -29,7 +31,7 @@
         }
 
         @else {
-          #{$property}-#{$dir-prop}: #{$_size};
+          #{$_property}: #{$_size};
         }
       }
     }
