@@ -1,0 +1,37 @@
+// Mixins :: Spacing
+
+@mixin composer-make-spacing($property: margin, $class: mrg, $auto: false) {
+  @each $dir-prop, $dir-class in $spacing-directions {
+    @each $size-class, $size in $spacing-sizes {
+
+      $_util-classname: u-#{$class}-#{$dir-class}-#{$size-class};
+      $_size: #{$size};
+
+      @if ($dir-class == false) {
+        $_util-classname: u-#{$class}-#{$size-class};
+      }
+
+      @if ($auto != false) {
+        $_util-classname: #{$_util-classname}--auto;
+        $_size: auto;
+      }
+
+      .#{$_util-classname} {
+
+        @if($dir-class == 'h') {
+          #{$property}-left: #{$_size};
+          #{$property}-right: #{$_size};
+        }
+
+        @elseif($dir-class == 'v') {
+          #{$property}-bottom: #{$_size};
+          #{$property}-top: #{$_size};
+        }
+
+        @else {
+          #{$property}-#{$dir-prop}: #{$_size};
+        }
+      }
+    }
+  }
+}

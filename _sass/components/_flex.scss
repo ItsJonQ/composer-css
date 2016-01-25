@@ -1,0 +1,7 @@
+// Components :: Flex
+
+.u-flex__block {
+  @include composer-each-breakpoint() {
+    display: flex;
+  }
+}
