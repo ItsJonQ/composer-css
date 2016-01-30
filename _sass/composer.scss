@@ -10,6 +10,7 @@
 // Mixins
 @import "mixins/breakpoints";
 @import "mixins/spacing";
+@import "mixins/typography";
 @import "mixins/width";
 
 // Components
@@ -17,5 +18,7 @@
 @import "components/inline";
 
 // Utilities
+@import "utilities/positioning";
 @import "utilities/spacing";
+@import "utilities/typography";
 @import "utilities/width";

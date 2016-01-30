@@ -14,13 +14,13 @@
 
 // Modifiers
 .o-flex {
-  &--v-align-top {
+  .u-v-align-top {
     @include align-items(flex-start);
   }
-  &--v-align-middle {
+  .u-v-align-middle {
     @include align-items(center);
   }
-  &--v-align-bottom {
+  .u-v-align-bottom {
     @include align-items(flex-end);
   }
 }

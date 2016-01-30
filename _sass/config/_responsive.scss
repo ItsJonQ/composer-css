@@ -1,5 +1,8 @@
 // Config :: Responsive
 
+// Source: Bootstrap V4
+// https://github.com/twbs/bootstrap/tree/v4-dev
+
 // Grid breakpoints
 //
 // Define the minimum and maximum dimensions at which your layout will change,
@@ -31,4 +34,4 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:      12 !default;
-$grid-gutter-width: 1.875rem !default; // 30px
+$grid-gutter-width: 30px !default; // 30px
