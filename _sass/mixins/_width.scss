@@ -13,7 +13,7 @@
     .#{$_util-classname} {
       @include composer-each-breakpoint() {
         max-width: 100%;
-        width: $_width !important;
+        width: $_width;
       }
     }
   }
