@@ -1,5 +1,8 @@
 // Composer :: (S)CSS Framework
 
+// Vendor
+@import "vendor/bourbon/app/assets/stylesheets/bourbon";
+
 // Config
 @import "config/responsive";
 @import "config/spacing";

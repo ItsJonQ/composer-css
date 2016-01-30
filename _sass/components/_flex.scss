@@ -1,13 +1,13 @@
 // Components :: Flex
 
 .o-flex {
-  display: flex;
-  justify-content: space-between;
-  align-item: center;
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(space-between);
 }
 
 .o-flex__block {
   @include composer-each-breakpoint() {
-    flex: 1;
+    @include flex(1);
   }
 }
