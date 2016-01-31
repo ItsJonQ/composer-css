@@ -1,9 +1,11 @@
 // Components :: Flex
 
 .o-flex {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(space-between);
+  @include composer-each-breakpoint() {
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(space-between);
+  }
 }
 
 .o-flex__block {
@@ -13,14 +15,14 @@
 }
 
 // Modifiers
-.o-flex {
-  .u-v-align-top {
+[class*="o-flex"] {
+  &.u-v-align-top {
     @include align-items(flex-start);
   }
-  .u-v-align-middle {
+  &.u-v-align-middle {
     @include align-items(center);
   }
-  .u-v-align-bottom {
+  &.u-v-align-bottom {
     @include align-items(flex-end);
   }
 }

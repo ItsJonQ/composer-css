@@ -9,7 +9,7 @@
 
 .u-display-block {
   @include composer-each-breakpoint() {
-    display: none !important;
+    display: block !important;
   }
 }
 
