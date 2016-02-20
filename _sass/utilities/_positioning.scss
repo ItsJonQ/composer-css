@@ -13,7 +13,11 @@
 }
 
 .u-clearfix {
-  @include clearfix;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 
 .u-v-align-top {
